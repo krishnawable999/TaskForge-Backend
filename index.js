@@ -12,7 +12,7 @@ dbConnection();
 const PORT = process.env.PORT || 5000;
 
 const app = express();
-const p = process.env.PORT'
+const p = process.env.PORT
 //origin to get only req. from the defined ports
 // methos means it can access only request from following methods
 app.use(cors({
