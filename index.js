@@ -26,6 +26,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(morgan("dev"));
+app.head('/api/users', (req, res) => {
+    // Handle HEAD request for /api/users
+    res.status(200).end(); // Return a 200 OK response
+});
 
 app.use("/api", routes);
 
