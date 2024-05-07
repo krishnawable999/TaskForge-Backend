@@ -30,6 +30,10 @@ app.head('/api/users', (req, res) => {
     // Handle HEAD request for /api/users
     res.status(200).end(); // Return a 200 OK response
 });
+app.get('/', (req, res) => {
+    res.send('Welcome to your Express.js application!');
+});
+
 
 app.use("/api", routes);
 
