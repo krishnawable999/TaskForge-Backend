@@ -16,7 +16,7 @@ const app = express();
 //origin to get only req. from the defined ports
 // methos means it can access only request from following methods
 app.use(cors({
-    origin: ["http://localhost:3000", "http://localhost:3001"],
+    origin: ["http://localhost:10000", "http://localhost:10000"],
     methods: ["GET","POST","PUT","DELETE"],
     credentials: true,
 }));
